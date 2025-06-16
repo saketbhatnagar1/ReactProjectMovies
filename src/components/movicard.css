@@ -1,0 +1,71 @@
+.movie-card {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.03);
+}
+
+.movie-poster {
+  position: relative;
+}
+
+.movie-poster img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+
+}
+
+.movie-poster button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.movie-poster button:hover {
+  background-color: #e04352;
+}
+
+.movie-description {
+  padding: 16px;
+}
+
+.movie-description h3 {
+  margin: 0 0 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.movie-description p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+  .movie-card {
+    width: 100%;
+  }
+  .movie-poster img {
+    height: auto;
+  }
+}
